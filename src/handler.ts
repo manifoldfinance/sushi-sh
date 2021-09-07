@@ -7,7 +7,7 @@
  */
 
 
-import { GraphQLClient } from 'graphql-request';
+import { GraphQLClient, gql } from 'graphql-request';
 import { Command } from '@oclif/command';
 // const { Command, Flags } = require('@oclif/core')
 
@@ -17,11 +17,23 @@ interface QueryHandlerProps {
   variables?: Record<string, any>;
 }
 
-const client = new GraphQLClient('https://api.thegraph.com/subgraphs/name/sushiswap/exchange');
+async function main() {
+  const endpoint = 'https://api.thegraph.com/subgraphs/name/sushiswap/exchange'
+const client = new GraphQLClient(endpoint, {
+  headers: {
+    "Content-Type": "application/json",
+  },
+  
+})
 
-const handler = ({ command, query, variables }: QueryHandlerProps) => client
+const handler = ({ command, query, variables }: QueryHandlerProps) => {
+  return client
     .request(query, variables)
-    .then(x => command.log(JSON.stringify(x, null, '  ')))
+    .then(command.log)
     .catch(command.error);
+};
 
-export default handler;
+
+main().catch((error) => console.error(error))
+}
+export default main;
