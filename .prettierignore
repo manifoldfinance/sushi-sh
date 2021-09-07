@@ -1,0 +1,8 @@
+lib/**/*
+dist/**/*
+bin/**/*
+*.min.js
+*.html
+*.css
+docs/**/*
+src/generated/**/*
