@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for sushi-sh">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -40,8 +41,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,11 +50,6 @@
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
-			<ul class="tsd-breadcrumb">
-				<li>
-					<a href="globals.html">Globals</a>
-				</li>
-			</ul>
 			<h1>sushi-sh</h1>
 		</div>
 	</div>
@@ -64,27 +58,237 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
+				<p align="center">
+					<img src="./docs/sushi_logo.svg">
+				</p>
 				<a href="#sushi-sh" id="sushi-sh" style="color: inherit; text-decoration: none;">
 					<h1>sushi-sh</h1>
 				</a>
 				<blockquote>
 					<p>Command Line Interface for SushiSwap</p>
 				</blockquote>
-				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
-					<h1>Usage</h1>
+				<a href="#overview" id="overview" style="color: inherit; text-decoration: none;">
+					<h2>Overview</h2>
 				</a>
 				<!-- usage -->
 				<pre><code class="language-sh-session">$ npm install -g sushi-sh
 $ sushi COMMAND
 running command...
 $ sushi (-v|--version|version)
-sushi-sh/1.1.0 darwin-x64 node-v14.17.3
+sushi-sh/1.0.2 darwin-x64 node-v14.17.3
 $ sushi --help [COMMAND]
 USAGE
   $ sushi COMMAND
 ...
 </code></pre>
 				<!-- usagestop -->
+				<a href="#commands" id="commands" style="color: inherit; text-decoration: none;">
+					<h2>Commands</h2>
+				</a>
+				<a href="#sushi-_meta" id="sushi-_meta" style="color: inherit; text-decoration: none;">
+					<h3>sushi _meta</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi _meta</code>]</li>
+				</ul>
+				<a href="#sushi-autocomplete-shell" id="sushi-autocomplete-shell" style="color: inherit; text-decoration: none;">
+					<h3>sushi autocomplete [SHELL]</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi autocomplete [SHELL]</code>]</li>
+				</ul>
+				<a href="#sushi-bundle" id="sushi-bundle" style="color: inherit; text-decoration: none;">
+					<h3>sushi bundle</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi bundle</code>]</li>
+				</ul>
+				<a href="#sushi-bundles" id="sushi-bundles" style="color: inherit; text-decoration: none;">
+					<h3>sushi bundles</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi bundles</code>]</li>
+				</ul>
+				<a href="#sushi-burn" id="sushi-burn" style="color: inherit; text-decoration: none;">
+					<h3>sushi burn</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi burn</code>]</li>
+				</ul>
+				<a href="#sushi-burns" id="sushi-burns" style="color: inherit; text-decoration: none;">
+					<h3>sushi burns</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi burns</code>]</li>
+				</ul>
+				<a href="#sushi-commands" id="sushi-commands" style="color: inherit; text-decoration: none;">
+					<h3>sushi commands</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi commands</code>]</li>
+				</ul>
+				<a href="#sushi-help" id="sushi-help" style="color: inherit; text-decoration: none;">
+					<h3>sushi help</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi help [COMMAND]</code>]</li>
+				</ul>
+				<a href="#sushi-liquidityposition" id="sushi-liquidityposition" style="color: inherit; text-decoration: none;">
+					<h3>sushi liquidityPosition</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi liquidityPosition</code>]</li>
+				</ul>
+				<a href="#sushi-liquiditypositionsnapshot" id="sushi-liquiditypositionsnapshot" style="color: inherit; text-decoration: none;">
+					<h3>sushi liquidityPositionSnapshot</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi liquidityPositionSnapshot</code>]</li>
+				</ul>
+				<a href="#liquiditypositionsnapshots" id="liquiditypositionsnapshots" style="color: inherit; text-decoration: none;">
+					<h3>liquidityPositionSnapshots</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi liquidityPositionSnapshots</code>]</li>
+				</ul>
+				<a href="#sushi-liquiditypositions" id="sushi-liquiditypositions" style="color: inherit; text-decoration: none;">
+					<h3>sushi liquidityPositions</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi liquidityPositions</code>]</li>
+				</ul>
+				<a href="#sushi-mint" id="sushi-mint" style="color: inherit; text-decoration: none;">
+					<h3>sushi mint</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi mint</code>]</li>
+				</ul>
+				<a href="#sushi-mints" id="sushi-mints" style="color: inherit; text-decoration: none;">
+					<h3>sushi mints</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi mints</code>]</li>
+				</ul>
+				<a href="#sushi-pair" id="sushi-pair" style="color: inherit; text-decoration: none;">
+					<h3>sushi pair</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi pair</code>]</li>
+				</ul>
+				<a href="#sushi-pairdaydata" id="sushi-pairdaydata" style="color: inherit; text-decoration: none;">
+					<h3>sushi pairDayData</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi pairDayData</code>]</li>
+				</ul>
+				<a href="#sushi-pairdaydatas" id="sushi-pairdaydatas" style="color: inherit; text-decoration: none;">
+					<h3>sushi pairDayDatas</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi pairDayDatas</code>]</li>
+				</ul>
+				<a href="#sushi-pairhourdata" id="sushi-pairhourdata" style="color: inherit; text-decoration: none;">
+					<h3>sushi pairHourData</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi pairHourData</code>]</li>
+				</ul>
+				<a href="#sushi-pairhourdatas" id="sushi-pairhourdatas" style="color: inherit; text-decoration: none;">
+					<h3>sushi pairHourDatas</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi pairHourDatas</code>]</li>
+				</ul>
+				<a href="#sushi-pairs" id="sushi-pairs" style="color: inherit; text-decoration: none;">
+					<h3>sushi pairs</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi pairs</code>]</li>
+				</ul>
+				<a href="#sushi-swap" id="sushi-swap" style="color: inherit; text-decoration: none;">
+					<h3>sushi swap</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi swap</code>]</li>
+				</ul>
+				<a href="#sushi-swaps" id="sushi-swaps" style="color: inherit; text-decoration: none;">
+					<h3>sushi swaps</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi swaps</code>]</li>
+				</ul>
+				<a href="#sushi-token" id="sushi-token" style="color: inherit; text-decoration: none;">
+					<h3>sushi token</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi token</code>]</li>
+				</ul>
+				<a href="#sushi-tokendaydata" id="sushi-tokendaydata" style="color: inherit; text-decoration: none;">
+					<h3>sushi tokenDayData</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi tokenDayData</code>]</li>
+				</ul>
+				<a href="#sushi-tokendaydatas" id="sushi-tokendaydatas" style="color: inherit; text-decoration: none;">
+					<h3>sushi tokenDayDatas</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi tokenDayDatas</code>]</li>
+				</ul>
+				<a href="#sushi-tokens" id="sushi-tokens" style="color: inherit; text-decoration: none;">
+					<h3>sushi tokens</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi tokens</code>]</li>
+				</ul>
+				<a href="#sushi-transaction" id="sushi-transaction" style="color: inherit; text-decoration: none;">
+					<h3>sushi transaction</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi transaction</code>]</li>
+				</ul>
+				<a href="#sushi-transactions" id="sushi-transactions" style="color: inherit; text-decoration: none;">
+					<h3>sushi transactions</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi transactions</code>]</li>
+				</ul>
+				<a href="#sushi-sushiswapdaydata" id="sushi-sushiswapdaydata" style="color: inherit; text-decoration: none;">
+					<h3>sushi sushiswapDayData</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi sushiswapDayData</code>]</li>
+				</ul>
+				<a href="#sushi-sushiswapdaydatas" id="sushi-sushiswapdaydatas" style="color: inherit; text-decoration: none;">
+					<h3>sushi sushiswapDayDatas</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi sushiswapDayDatas</code>]</li>
+				</ul>
+				<a href="#sushi-sushiswapfactories" id="sushi-sushiswapfactories" style="color: inherit; text-decoration: none;">
+					<h3>sushi sushiswapFactories</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi sushiswapFactories</code>]</li>
+				</ul>
+				<a href="#sushi-sushiswapfactory" id="sushi-sushiswapfactory" style="color: inherit; text-decoration: none;">
+					<h3>sushi sushiswapFactory</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi sushiswapFactory</code>]</li>
+				</ul>
+				<a href="#sushi-user" id="sushi-user" style="color: inherit; text-decoration: none;">
+					<h3>sushi user</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi user</code>]</li>
+				</ul>
+				<a href="#sushi-users" id="sushi-users" style="color: inherit; text-decoration: none;">
+					<h3>sushi users</h3>
+				</a>
+				<ul>
+					<li>[<code>sushi users</code>]</li>
+				</ul>
 				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
 					<h2>License</h2>
 				</a>
@@ -94,118 +298,16 @@ USAGE
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="globals.html"><em>Globals</em></a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands__meta_index_.html">&quot;commands/_<wbr>meta/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_bundle_index_.html">&quot;commands/bundle/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_bundles_index_.html">&quot;commands/bundles/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_burn_index_.html">&quot;commands/burn/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_burns_index_.html">&quot;commands/burns/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_liquidityposition_index_.html">&quot;commands/liquidity<wbr>Position/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_liquiditypositionsnapshot_index_.html">&quot;commands/liquidity<wbr>Position<wbr>Snapshot/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_liquiditypositionsnapshots_index_.html">&quot;commands/liquidity<wbr>Position<wbr>Snapshots/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_liquiditypositions_index_.html">&quot;commands/liquidity<wbr>Positions/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_mint_index_.html">&quot;commands/mint/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_mints_index_.html">&quot;commands/mints/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_pair_index_.html">&quot;commands/pair/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_pairdaydata_index_.html">&quot;commands/pair<wbr>Day<wbr>Data/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_pairdaydatas_index_.html">&quot;commands/pair<wbr>Day<wbr>Datas/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_pairhourdata_index_.html">&quot;commands/pair<wbr>Hour<wbr>Data/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_pairhourdatas_index_.html">&quot;commands/pair<wbr>Hour<wbr>Datas/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_pairs_index_.html">&quot;commands/pairs/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_sushiswapdaydata_index_.html">&quot;commands/sushiswap<wbr>Day<wbr>Data/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_sushiswapdaydatas_index_.html">&quot;commands/sushiswap<wbr>Day<wbr>Datas/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_sushiswapfactories_index_.html">&quot;commands/sushiswap<wbr>Factories/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_sushiswapfactory_index_.html">&quot;commands/sushiswap<wbr>Factory/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_swap_index_.html">&quot;commands/swap/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_swaps_index_.html">&quot;commands/swaps/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_token_index_.html">&quot;commands/token/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_tokendaydata_index_.html">&quot;commands/token<wbr>Day<wbr>Data/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_tokendaydatas_index_.html">&quot;commands/token<wbr>Day<wbr>Datas/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_tokens_index_.html">&quot;commands/tokens/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_transaction_index_.html">&quot;commands/transaction/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_transactions_index_.html">&quot;commands/transactions/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_user_index_.html">&quot;commands/user/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_commands_users_index_.html">&quot;commands/users/index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_generated_graphql_.html">&quot;generated/graphql&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_handler_.html">&quot;handler&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_index_.html">&quot;index&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_types_.html">&quot;types&quot;</a>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-function tsd-is-external">
+						<a href="modules.html#run" class="tsd-kind-icon">run</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -215,21 +317,6 @@ USAGE
 	<div class="container">
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
-			<ul class="tsd-legend">
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
-				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-			</ul>
 		</div>
 	</div>
 </footer>
