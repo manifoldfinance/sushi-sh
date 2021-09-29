@@ -1,12 +1,9 @@
-<p align="center">
-<img src="./docs/sushi_logo.svg">
-</p>
-
 sushi-sh
 ======
 
 > Command Line Interface for SushiSwap
 
+> NOTE: This interface works in theory, just need to regenerate the graphql endpoints 
 
 ## Overview
 <!-- usage -->
