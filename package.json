@@ -12,15 +12,14 @@
     "url": "git+https://github.com/manifoldfinance/sushi-sh.git"
   },
   "scripts": {
-    "build": "npx tsc -b",
+    "build": "tsc",
     "postpack": "rm -f oclif.manifest.json",
+    "posttest": "eslint . --ext .ts --config .eslintrc",
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest",
-    "test": "exit 0",
-    "docs": "npx typedoc src/index.ts",
-    "version": "npx oclif-dev readme && git add README.md",
-    "codegen": "npx graphql-codegen --config codegen.yml",
-    "release": "npx oclif-dev pack:macos && oclif-dev pack:win && npm publish --access public",
-    "lint": "npx eslint src --ext .ts --fix"
+    "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif-dev readme && git add README.md",
+    "codegen": "graphql-codegen --config codegen.yml",
+    "release": "oclif-dev pack:macos && oclif-dev pack:win && npm publish --access public"
   },
   "dependencies": {
     "@graphql-codegen/typescript": "^1.21.0",
@@ -33,6 +32,7 @@
     "@oclif/plugin-not-found": "^1.2.4",
     "@oclif/plugin-update": "^1.3.10",
     "@oclif/plugin-warn-if-update-available": "^1.7.0",
+    "consola": "^2.15.3",
     "eslint-plugin-vue": "^7.5.0",
     "graphql": "^15.5.0",
     "graphql-request": "^3.4.0",
