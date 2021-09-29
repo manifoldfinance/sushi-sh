@@ -6,14 +6,9 @@
     "outDir": "lib",
     "rootDir": "src",
     "strict": true,
-    "moduleResolution": "node",
-    "noImplicitAny": false,
-    "esModuleInterop": true,
-    "downlevelIteration": true,
     "target": "es2017"
   },
   "include": [
     "src/**/*"
-  ],
-"exclude": [ "node_modules/**/*", "test/**/*", "tests/**/*"]
+  ]
 }

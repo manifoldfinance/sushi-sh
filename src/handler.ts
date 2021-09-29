@@ -9,7 +9,8 @@
 
  import { GraphQLClient } from "graphql-request";
  import { Command } from "@oclif/command";
- import consola from 'consola/src/node'
+ const consola = require('consola')
+
 
  interface QueryHandlerProps {
    command: Command;
